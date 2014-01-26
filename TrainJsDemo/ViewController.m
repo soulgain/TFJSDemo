@@ -382,9 +382,6 @@ JSValueRef selectNodeSetWrap(JSContextRef ctx, JSObjectRef function, JSObjectRef
     NSString *passWord = self.inputField2.text;
     NSString *verifyCode = self.inputField3.text;
     
-    userName = @"falcon_cjj";
-    passWord = @"asdasd_";
-    
     JSValueRef r = JSObjectGetProperty(gContext, gGlobalObject, [@"login" copyToJSStringValue], NULL);
     
     if (JSValueIsObject(gContext, r)) {
