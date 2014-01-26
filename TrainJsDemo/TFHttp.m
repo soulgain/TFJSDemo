@@ -9,20 +9,20 @@
 #import "TFHttp.h"
 
 
-//@interface NSURLRequest (IgnoreSSL)
-//
-//+ (BOOL)allowsAnyHTTPSCertificateForHost:(NSString*)host;
-//
-//@end
-//
-//@implementation NSURLRequest (IgnoreSSL)
-//
-//+ (BOOL)allowsAnyHTTPSCertificateForHost:(NSString*)host
-//{
-//    return YES;
-//}
-//
-//@end
+@interface NSURLRequest (IgnoreSSL)
+
++ (BOOL)allowsAnyHTTPSCertificateForHost:(NSString*)host;
+
+@end
+
+@implementation NSURLRequest (IgnoreSSL)
+
++ (BOOL)allowsAnyHTTPSCertificateForHost:(NSString*)host
+{
+    return YES;
+}
+
+@end
 
 @implementation TFHttp
 
